@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل في المسابقة</title>
+    <link rel="stylesheet" href="nbs.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌙 أهلاً بكم في المسابقة الرمضانية!</h1>
+        <p>يرجى إدخال بياناتك للمشاركة</p>
+        <form id="userForm">
+            <input type="text" id="name" placeholder="الاسم" required>
+            <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+            <input type="number" id="age" placeholder="العمر" required>
+            <input type="text" id="country" placeholder="البلد" required>
+            <button type="submit">ابدأ المسابقة</button>
+        </form>
+    </div>
+    <script type="module" src="firebase.js"></script>
+</body>
+</html>

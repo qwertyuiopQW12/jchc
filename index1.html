@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المرحلة الأولى</title>
+    <link rel="stylesheet" href="nbs.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>المرحلة الأولى</h1>
+    <p>أجب على جميع الأسئلة للانتقال إلى المرحلة الثانية.</p>
+    
+    <form id="quizForm">
+        <div class="question">
+            <p>1. ما هو لون السماء في النهار؟</p>
+            <label><input type="radio" name="q1" value="أزرق" required> أزرق</label>
+            <label><input type="radio" name="q1" value="أخضر"> أخضر</label>
+        </div>
+
+        <div class="question">
+            <p>2. كم عدد أصابع اليد الواحدة؟</p>
+            <label><input type="radio" name="q2" value="5" required> 5</label>
+            <label><input type="radio" name="q2" value="4"> 4</label>
+        </div>
+
+        <div class="question">
+            <p>3. ما هو الحيوان الذي يزأر؟</p>
+            <label><input type="radio" name="q3" value="الأسد" required> الأسد</label>
+            <label><input type="radio" name="q3" value="الأرنب"> الأرنب</label>
+        </div>
+
+        <div class="question">
+            <p>4. ماذا نشرب عندما نشعر بالعطش؟</p>
+            <label><input type="radio" name="q4" value="الماء" required> الماء</label>
+            <label><input type="radio" name="q4" value="الزيت"> الزيت</label>
+        </div>
+
+        <div class="question">
+            <p>5. ما هو عكس الليل؟</p>
+            <label><input type="radio" name="q5" value="النهار" required> النهار</label>
+            <label><input type="radio" name="q5" value="الغروب"> الغروب</label>
+        </div>
+
+        <div class="question">
+            <p>6. كم عدد أرجل العنكبوت؟</p>
+            <label><input type="radio" name="q6" value="8" required> 8</label>
+            <label><input type="radio" name="q6" value="6"> 6</label>
+        </div>
+
+        <div class="question">
+            <p>7. ما هو الطائر الذي لا يطير؟</p>
+            <label><input type="radio" name="q7" value="النعامة" required> النعامة</label>
+            <label><input type="radio" name="q7" value="الصقر"> الصقر</label>
+        </div>
+
+        <div class="question">
+            <p>8. أين تعيش الأسماك؟</p>
+            <label><input type="radio" name="q8" value="في الماء" required> في الماء</label>
+            <label><input type="radio" name="q8" value="في البر"> في البر</label>
+        </div>
+
+        <div class="question">
+            <p>9. ماذا نقول عند الصباح؟</p>
+            <label><input type="radio" name="q9" value="صباح الخير" required> صباح الخير</label>
+            <label><input type="radio" name="q9" value="تصبح على خير"> تصبح على خير</label>
+        </div>
+
+        <div class="question">
+            <p>10. ماذا تستخدم للتنفس؟</p>
+            <label><input type="radio" name="q10" value="الأنف" required> الأنف</label>
+            <label><input type="radio" name="q10" value="الأذن"> الأذن</label>
+        </div>
+
+        <button type="submit">الانتقال إلى المرحلة الثانية</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("quizForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // منع إعادة تحميل الصفحة
+        window.location.href = "stage2.html"; // الانتقال إلى المرحلة الثانية
+    });
+</script>
+
+</body>
+</html>

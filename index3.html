@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المرحلة الثانية - مسابقة رمضان</title>
+    <link rel="stylesheet" href="jvc.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎉 مسابقة رمضان الكبرى 🎉</h1>
+    <p>📢 شارك هذا الرابط مع 5 مجموعات على الواتساب أو مع أصدقائك لتتمكن من الانتقال للمرحلة التالية! 🎁</p>
+    
+    <!-- زر مشاركة عبر الواتساب -->
+    <button onclick="shareOnWhatsApp()">📲 مشاركة عبر واتساب</button>
+
+    <!-- شريط التقدم -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- زر تأكيد المشاركة -->
+    <button onclick="shareConfirmed()">✅ لقد شاركت</button>
+</div>
+
+<script>
+    let shares = 0;
+
+    // فتح واتساب مع رابط المشاركة
+    function shareOnWhatsApp() {
+        let message = encodeURIComponent("📢 شارك في مسابقة رمضان الكبرى واربح جوائز رائعة! 🔥 انضم الآن من هنا: https://qwertyuiopqw12.github.io/bbbdbd/");
+        let whatsappUrl = `https://wa.me/?text=${message}`;
+        window.open(whatsappUrl, '_blank');
+    }
+
+    function shareConfirmed() {
+        shares++; // زيادة عدد المشاركات
+        
+        // تحديث شريط التقدم
+        let progressBar = document.getElementById("progress-bar");
+        let progress = (shares / 5) * 100; // حساب النسبة المئوية
+        progressBar.style.width = progress + "%";
+
+        if (shares >= 5) {
+            // عند اكتمال التقدم يتم تحويل المستخدم إلى صفحة الفائزين
+            setTimeout(() => {
+                window.location.href = "winners.html"; // استبدلها بصفحة الفائزين
+            }, 500);
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, #111, #222);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.winner-container {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 215, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 2px solid gold;
+    position: relative;
+}
+
+.trophy {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.gold-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: gold;
+}
+
+.winner-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.money-effect {
+    font-size: 25px;
+    margin: 10px 0;
+    animation: money 2s infinite;
+}
+
+@keyframes money {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.announcement {
+    font-size: 18px;
+    color: #ffcc00;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.5);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #128C7E;
+}
+
+.confetti {
+    font-size: 22px;
+    margin: 15px 0;
+    animation: confetti 2s infinite;
+}
+
+@keyframes confetti {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.sponsor-title {
+    font-size: 20px;
+    color: #ffcc00;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.sponsors img {
+    width: 90px;
+    height: auto;
+    filter: brightness(90%);
+}
+
+.footer-text {
+    font-size: 16px;
+    color: #ddd;
+    margin-top: 20px;
+}

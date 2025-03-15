@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #111, #222);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #F8C701;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #F8C701;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #F8C701;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(248, 199, 1, 0.5);
+}
+
+button:hover {
+    background: #b71c1c;
+    box-shadow: 0 5px 15px rgba(183, 28, 28, 0.5);
+    color: white;
+}
+
+/* شريط التقدم */
+.progress-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 10px;
+    background: #F8C701;
+    transition: 0.3s;
+}

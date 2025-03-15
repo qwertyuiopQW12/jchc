@@ -1,0 +1,49 @@
+.winner-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #F8C701;
+    margin: 10px 0;
+}
+
+.highlight {
+    font-size: 20px;
+    color: #ff4444;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.5);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #128C7E;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.sponsors img {
+    width: 100px;
+    height: auto;
+    filter: brightness(90%);
+}
+
+.footer-text {
+    font-size: 16px;
+    color: #ddd;
+    margin-top: 20px;
+} 
